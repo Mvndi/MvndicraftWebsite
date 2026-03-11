@@ -3,6 +3,7 @@ import Image from "next/image";
 import { DiscordIcon, TwitterIcon, YoutubeIcon } from "@/app/components/Icons";
 import { ShoppingCart, Map } from "lucide-react";
 import mvndilogo from "../../../../public/image/mvndilogo.png"
+import ServerStatus from "../Util/ServerStatus";
 
 
 export default function Heading() {
@@ -34,14 +35,13 @@ export default function Heading() {
 
                     <div className="flex items-center text-2xl">
                         <Image src={mvndilogo} alt={"logo"} />
-                        <span className="text-[#00FF85] mt-3 ml-3 px-2">●</span> <p className="text-xs mt-3">342<span className="text-xs"> Online players</span></p>
+                        <ServerStatus/>
                     </div>
 
                     <div className="flex gap-6 text-xs uppercase items-center font-bold tracking-widest">
                         <Link href="#" className="hover:text-[#E2B714] transition-colors">Home</Link>
                         <Link href="https://www.planetminecraft.com/server/mvndicraft-medieval-geopol/" target="_blank" rel="noreferrer" className="hover:text-[#E2B714] transition-colors">Vote</Link>
-                        <Link href="#" className="hover:text-[#E2B714] bg-[#26262a] px-4 py-2 rounded-md transition-colors">Forums</Link>
-                        <Link href="#" className="hover:text-[#E2B714] transition-colors">Wiki</Link>
+                        <Link href="#" className="hover:text-[#E2B714] bg-[#26262a] px-4 py-2 rounded-md transition-colors">Wiki</Link>
                         <Link href="https://www.patreon.com/Mvndicraft" target="_blank" rel="noreferrer" className="border border-[#E2B714] flex px-4 hover:bg-[#E2B714] hover:text-black transition-all items-center">
                             <ShoppingCart width={16} className="mr-2"/> Store</Link>
                     </div>

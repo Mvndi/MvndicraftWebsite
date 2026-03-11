@@ -26,7 +26,7 @@ export const POSTS: Post[] = [
             {
                 type: 'image',
                 src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLOuppI_GgYbojbAgsQ8Ghw8EC4tjdEXimFQ&s',
-                alt: "Description de l'image"
+                alt: "Image description"
             }
         ]
     },

@@ -28,12 +28,22 @@ export default function Footer() {
 
                 <div className="col-span-1 md:col-span-2">
                     <h3 className="text-xl font-black uppercase tracking-wider text-white mb-6">MvndiCraft</h3>
-                    <p className="text-[#666] text-sm max-w-sm mb-8 leading-relaxed">
-                        Gaming for Charity. Every year, we unite the community to build a better world while creating unforgettable legends.
+                    
+                    {/* Devise romaine */}
+                    <p className="text-[#E2B714] text-sm italic mb-2 font-serif">
+                        "Non nobis solum, sed omnibus."
                     </p>
+                    <p className="text-[#666] text-xs mb-6 border-l-2 border-[#E2B714] pl-3">
+                        Not for ourselves alone, but for everyone.
+                    </p>
+                    
+                    <p className="text-[#666] text-sm max-w-sm mb-8 leading-relaxed">
+                        United under one banner, we rise — to build, to give, to become legend.
+                    </p>
+                    
                     <div className="flex gap-3">
                         {socialLinks.map((social, i) => (
-                            <Link key={i} href={social.href} target="_blank" rel="noreferrer" className="w-10 h-10 bg-[#111] flex items-center justify-center hover:bg-[#E2B714] hover:text-black transition-all duration-300">
+                            <Link key={i} href={social.href} target="_blank" rel="noreferrer" className="w-10 h-10 bg-[#111] flex items-center justify-center hover:bg-[#4d4d4d] hover:text-black transition-all duration-300">
                                 <social.icon className="w-4 h-4" />
                             </Link>
                         ))}
