@@ -11,10 +11,9 @@ const socialLinks = [
 
 const footerLinks = {
     platform: [
-        { label: "Vote", href: "/vote" },
-        { label: "Forums", href: "/forums" },
-        { label: "Wiki", href: "/wiki" },
-        { label: "Store", href: "/store" },
+        { label: "Vote", href: "/https://www.planetminecraft.com/server/mvndicraft-medieval-geopol/" },
+        { label: "Wiki", href: "/#" },
+        { label: "Store", href: "https://www.patreon.com/Mvndicraft" },
     ],
     legal: [
         { label: "Terms of Use", href: "/terms-of-use" },
@@ -59,8 +58,7 @@ export default function Footer() {
                         <ul className="space-y-4">
                             {footerLinks[section].map((link) => (
                                 <li key={link.label}>
-                                    {/* Pas de target="_blank" sur les liens internes */}
-                                    <Link href={link.href} className="text-sm text-[#888] hover:text-white transition-colors">
+                                    <Link href={link.href} target="_blank" rel="noreferrer" className="text-sm text-[#888] hover:text-white transition-colors">
                                         {link.label}
                                     </Link>
                                 </li>
