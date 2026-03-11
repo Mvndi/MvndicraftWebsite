@@ -23,7 +23,7 @@ export default function Heading() {
                     <div className="flex text-white justify-between items-center">
 
                         <Link href="https://discord.com/invite/2BP6h8Ssta" target="_blank" rel="noreferrer" className="text-sm flex items-center gap-1 hover:bg-[#4d4d4d] h-24 w-24 transition-transform justify-center duration-300">
-                            <DiscordIcon className="w-4" />  Discord</Link>
+                            <DiscordIcon className="w-4 fill-white" />  Discord</Link>
                         <Link href="https://map.mvndicraft.net/#minecraft_overworld;flat;108608,64,29328;1" target="_blank" rel="noreferrer" className="text-sm flex items-center gap-1 hover:bg-[#4d4d4d] h-15 w-15 transition-transform justify-center duration-300">
                             <Map className="w-4" /> Map</Link>
                     </div>
@@ -34,7 +34,9 @@ export default function Heading() {
                 <div className="max-w-7xl mx-auto px-8 flex justify-between items-center">
 
                     <div className="flex items-center text-2xl">
+                        <Link href="/">
                         <Image src={mvndilogo} alt={"logo"} />
+                        </Link>
                         <ServerStatus/>
                     </div>
 

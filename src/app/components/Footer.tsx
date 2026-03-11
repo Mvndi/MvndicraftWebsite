@@ -29,7 +29,6 @@ export default function Footer() {
                 <div className="col-span-1 md:col-span-2">
                     <h3 className="text-xl font-black uppercase tracking-wider text-white mb-6">MvndiCraft</h3>
                     
-                    {/* Devise romaine */}
                     <p className="text-[#E2B714] text-sm italic mb-2 font-serif">
                         "Non nobis solum, sed omnibus."
                     </p>
@@ -44,7 +43,7 @@ export default function Footer() {
                     <div className="flex gap-3">
                         {socialLinks.map((social, i) => (
                             <Link key={i} href={social.href} target="_blank" rel="noreferrer" className="w-10 h-10 bg-[#111] flex items-center justify-center hover:bg-[#4d4d4d] hover:text-black transition-all duration-300">
-                                <social.icon className="w-4 h-4" />
+                                <social.icon className="w-4 h-4 fill-white" />
                             </Link>
                         ))}
                     </div>
