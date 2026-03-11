@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { DiscordIcon } from "@/app/components/Icons";
 import { Crown } from "lucide-react";
 import { useState } from "react";
@@ -56,10 +58,10 @@ export default function Heading() {
                         </div>
 
                         <div className="bg-white/10 backdrop-blur-sm p-2 rounded-2xl transition-transform duration-300 hover:scale-105">
-                            <button className="bg-[#E2B714] text-black px-12 py-5 font-black uppercase tracking-widest rounded-md cursor-pointer h-[72px] flex items-center gap-3">
+                            <Link href="https://discord.com/invite/2BP6h8Ssta" target="_blank" rel="noreferrer" className="bg-[#E2B714] text-black px-12 py-5 font-black uppercase tracking-widest rounded-md cursor-pointer h-[72px] flex items-center gap-3">
                                 <DiscordIcon className="fill-black w-6 h-6" />
-                                JOIN OUR DISCORD
-                            </button>
+                                JOIN DISCORD
+                            </Link>
                         </div>
                     </div>
                     <p className="font-light text-gray-300">Java edition only</p>

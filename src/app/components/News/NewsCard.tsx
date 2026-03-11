@@ -50,7 +50,7 @@ export const NewsCard = ({ post }: NewsCardProps) => {
 
                     <p className="text-xs text-[#555] font-mono">{post.date}</p>
 
-                    <p className="text-sm text-[#888] leading-relaxed line-clamp-2 mt-2 pt-2 border-t border-[#1e1e22]">
+                    <p className="text-md text-[#888] leading-relaxed line-clamp-2 mt-2 pt-2 border-t border-[#1e1e22]">
                         {post.content}
                     </p>
                 </div>

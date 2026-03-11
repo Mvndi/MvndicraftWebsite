@@ -43,7 +43,7 @@ export default function Footer() {
                     <div className="flex gap-3">
                         {socialLinks.map((social, i) => (
                             <Link key={i} href={social.href} target="_blank" rel="noreferrer" className="w-10 h-10 bg-[#111] flex items-center justify-center hover:bg-[#4d4d4d] hover:text-black transition-all duration-300">
-                                <social.icon className="w-4 h-4 fill-white" />
+                                <social.icon className="w-4 h-4 fill-white " />
                             </Link>
                         ))}
                     </div>
@@ -73,7 +73,7 @@ export default function Footer() {
                     Created by{" "}
                     <Link href="https://matthieuclaessens.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-[#E2B714] transition-colors underline underline-offset-4">
                         Matthieu CLAESSENS
-                    </Link>
+                    </Link> (Nenfal)
                 </p>
                 <p className="mt-5 text-[#666]">
                     This site is not affiliated with Mojang or Microsoft Studios . For inquiries:{" "}
