@@ -12,10 +12,10 @@ export default function Heading() {
             <div className="bg-black h-[35px]">
                 <div className="max-w-7xl mx-auto flex justify-between items-center h-full">
                     <div className="flex text-white items-center ml-5">
-                        <Link href="https://x.com/mvndicraft" className="hover:bg-[#4d4d4d] p-2 transition-colors">
+                        <Link href="https://x.com/mvndicraft" target="_blank" rel="noreferrer" className="hover:bg-[#4d4d4d] p-2 transition-colors">
                             <TwitterIcon className="w-4 h-4" />
                         </Link>
-                        <Link href="https://www.youtube.com/@mvndicraft4233" className="hover:bg-[#4d4d4d] p-2 transition-colors">
+                        <Link href="https://www.youtube.com/@mvndicraft4233" target="_blank" rel="noreferrer" className="hover:bg-[#4d4d4d] p-2 transition-colors">
                             <YoutubeIcon className="w-4 h-4" />
                         </Link>
                     </div>
@@ -39,13 +39,11 @@ export default function Heading() {
 
                     <div className="flex gap-6 text-xs uppercase items-center font-bold tracking-widest">
                         <Link href="#" className="hover:text-[#E2B714] transition-colors">Home</Link>
-                        <Link href="#" className="hover:text-[#E2B714] transition-colors">Vote</Link>
+                        <Link href="https://www.planetminecraft.com/server/mvndicraft-medieval-geopol/" target="_blank" rel="noreferrer" className="hover:text-[#E2B714] transition-colors">Vote</Link>
                         <Link href="#" className="hover:text-[#E2B714] bg-[#26262a] px-4 py-2 rounded-md transition-colors">Forums</Link>
                         <Link href="#" className="hover:text-[#E2B714] transition-colors">Wiki</Link>
-                        <Link href="#" className="border border-[#E2B714] flex px-4 hover:bg-[#E2B714] hover:text-black transition-all">
-                            <ShoppingCart width={16} />
-                            <p className="mt-1 ml-2">Store</p>
-                        </Link>
+                        <Link href="https://www.patreon.com/Mvndicraft" target="_blank" rel="noreferrer" className="border border-[#E2B714] flex px-4 hover:bg-[#E2B714] hover:text-black transition-all items-center">
+                            <ShoppingCart width={16} className="mr-2"/> Store</Link>
                     </div>
                 </div>
             </div>

@@ -1,12 +1,13 @@
 "use client";
 
 import { useState } from "react"
+import Link from "next/link";
 import Image from "next/image";
 import News from "@/app/components/News/News";
 import Footer from "@/app/components/Footer";
 import army from "../../public/image/army.png";
 import chivalry from "../../public/image/chivalry.png";
-import Heading from "./components/Globals/Heading";
+import Navbar from "./components/Globals/NavBar";
 
 export default function Home() {
   const [copied, setCopied] = useState(false);
@@ -19,7 +20,7 @@ export default function Home() {
 
   return (
     <div className="relative min-h-screen">
-      <Heading/>
+      <Navbar/>
       <main className="relative z-10 max-w-full min-h-[95vh] mx-auto px-8 py-24 flex flex-col justify-center items-center gap-12">
         <div className="absolute inset-0 bg-[#FF813D] opacity-45 z-0" />
 
@@ -115,14 +116,14 @@ export default function Home() {
           />
         </div>
         
-        <a 
+        <Link
           href="https://map.mvndicraft.net/" 
           target="_blank" 
           rel="noopener noreferrer"
           className="w-full py-3 bg-[#E2B714] text-[#111114] font-black uppercase tracking-widest text-sm text-center rounded hover:bg-yellow-500 transition-all shadow-[0_0_15px_rgba(226,183,20,0.3)]"
         >
           OPEN THE MAP
-        </a>
+        </Link>
       </div>
       
     </div>

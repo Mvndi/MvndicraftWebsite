@@ -33,9 +33,9 @@ export default function Footer() {
                     </p>
                     <div className="flex gap-3">
                         {socialLinks.map((social, i) => (
-                            <a key={i} href={social.href} className="w-10 h-10 bg-[#111] flex items-center justify-center hover:bg-[#E2B714] hover:text-black transition-all duration-300">
+                            <Link key={i} href={social.href} target="_blank" rel="noreferrer" className="w-10 h-10 bg-[#111] flex items-center justify-center hover:bg-[#E2B714] hover:text-black transition-all duration-300">
                                 <social.icon className="w-4 h-4" />
-                            </a>
+                            </Link>
                         ))}
                     </div>
                 </div>
@@ -48,7 +48,7 @@ export default function Footer() {
                         <ul className="space-y-4">
                             {footerLinks[section].map((link) => (
                                 <li key={link.label}>
-                                    <Link href={link.href} className="text-sm text-[#888] hover:text-white transition-colors">
+                                    <Link href={link.href} target="_blank" rel="noreferrer" className="text-sm text-[#888] hover:text-white transition-colors">
                                         {link.label}
                                     </Link>
                                 </li>
@@ -64,6 +64,12 @@ export default function Footer() {
                     Created by{" "}
                     <Link href="https://matthieuclaessens.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-[#E2B714] transition-colors underline underline-offset-4">
                         Matthieu CLAESSENS
+                    </Link>
+                </p>
+                <p className="mt-5 text-[#666]">
+                    This site is not affiliated with Mojang or Microsoft Studios . For inquiries:{" "}
+                    <Link href="mailto:admin@mvndicraft.net" className="hover:text-[#E2B714] transition-colors underline underline-offset-4">
+                        admin@mvndicraft.net
                     </Link>
                 </p>
             </div>
