@@ -9,11 +9,11 @@ import CTA from "@/app/components/Globals/CTA";
 
 export default function Home() {
   return (
-    <main className="relative min-h-screen">
+    <main className="relative min-h-screen" role="main" aria-label="Mvndicraft Home Page">
       <Heading />
       <Discover/>
-      <BentoGallery/>
-      <News />
+      <BentoGallery aria-label="Game Features Gallery"/>
+      <News aria-label="Latest News and Updates"/>
       <ForgeKingdom/>
       <CTA/>
     </main>

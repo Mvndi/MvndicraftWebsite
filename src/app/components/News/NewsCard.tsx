@@ -31,7 +31,7 @@ export const NewsCard = ({ post }: NewsCardProps) => {
                             />
                         )
                     ) : (
-                        <div className="w-full h-full bg-gradient-to-br from-[#1e1e22] to-[#2a2a2e] flex items-center justify-center">
+                        <div className="w-full h-full bg-linear-to-br from-[#1e1e22] to-[#2a2a2e] flex items-center justify-center">
                             <span className="text-[#666] text-sm">No media</span>
                         </div>
                     )}

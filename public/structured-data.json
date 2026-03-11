@@ -1,0 +1,24 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Mvndicraft",
+  "alternateName": "Mvndicraft - Medieval Geopolitical Minecraft Server",
+  "url": "https://mvndicraft.net",
+  "description": "Join Mvndicraft, the ultimate medieval geopolitical Minecraft server. Build your kingdom, command armies, and dominate the realm.",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://mvndicraft.net/search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Mvndicraft",
+    "url": "https://mvndicraft.net",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://mvndicraft.net/image/mvndilogo.png",
+      "width": 512,
+      "height": 512
+    }
+  }
+}
