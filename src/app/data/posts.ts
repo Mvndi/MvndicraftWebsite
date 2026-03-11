@@ -21,11 +21,11 @@ export const POSTS: Post[] = [
         title: "Update..", 
         category: "Update", 
         date: "10 march 2026", 
-        content: "...",
+        content: "Lorem ipsum dolor",
         media: [
             {
                 type: 'image',
-                src: 'https://media.tenor.com/hzHPH3TketMAAAAM/taco.gif',
+                src: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLOuppI_GgYbojbAgsQ8Ghw8EC4tjdEXimFQ&s',
                 alt: "Description de l'image"
             }
         ]
