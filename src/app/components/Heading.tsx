@@ -14,6 +14,14 @@ export default function Heading() {
         setTimeout(() => setCopied(false), 2000);
     }
 
+    const handleScrollTo = (id: string) => {
+        const el = document.getElementById(id);
+        if (el) {
+            el.scrollIntoView({ behavior: "smooth" });
+            window.history.replaceState(null, "", window.location.pathname);
+        }
+    }
+
     return (
         <main className="relative z-10 max-w-full min-h-[95vh] mx-auto px-4 md:px-8 py-24 flex flex-col justify-center items-center gap-12" role="main" aria-label="Mvndicraft - Medieval Geopolitical Minecraft Server">
             <div className="absolute inset-0 bg-[#FF813D] opacity-45 z-0" aria-hidden="true" />
@@ -47,8 +55,8 @@ export default function Heading() {
                 </header>
 
                 <div className="relative flex flex-col items-center">
-                    <div 
-                        onClick={handleCopy} 
+                    <div
+                        onClick={handleCopy}
                         role="button"
                         tabIndex={0}
                         onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleCopy(); }}
@@ -66,20 +74,20 @@ export default function Heading() {
                 <nav className="flex flex-col items-center gap-4 w-full" aria-label="Main navigation">
                     <div className="flex flex-col sm:flex-row justify-center gap-4 w-full px-4 sm:px-0">
                         <div className="bg-white/10 backdrop-blur-sm p-2 rounded-2xl transition-transform duration-300 hover:scale-105 w-full sm:w-auto">
-                            <Link 
-                                href="#discover"
+                            <button
+                                onClick={() => handleScrollTo("discover")}
                                 className="bg-[#26262a] text-white w-full sm:w-auto px-8 md:px-12 py-4 md:py-5 font-black uppercase tracking-widest duration-300 rounded-md cursor-pointer h-[60px] md:h-[72px] flex items-center justify-center gap-3"
                                 aria-label="Discover game features and gameplay"
                             >
                                 <Crown className="w-5 h-5" aria-hidden="true" /> Discover the game
-                            </Link>
+                            </button>
                         </div>
 
                         <div className="bg-white/10 backdrop-blur-sm p-2 rounded-2xl transition-transform duration-300 hover:scale-105 w-full sm:w-auto">
-                            <Link 
-                                href="https://discord.com/invite/2BP6h8Ssta" 
-                                target="_blank" 
-                                rel="noopener noreferrer" 
+                            <Link
+                                href="https://discord.com/invite/2BP6h8Ssta"
+                                target="_blank"
+                                rel="noopener noreferrer"
                                 className="bg-[#E2B714] text-black w-full sm:w-auto px-8 md:px-12 py-4 md:py-5 font-black uppercase tracking-widest rounded-md cursor-pointer h-[60px] md:h-[72px] flex items-center justify-center gap-3"
                                 aria-label="Join our Discord community"
                             >
