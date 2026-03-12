@@ -1,4 +1,3 @@
-import chivalry from "../../../public/image/chivalry.png";
 import Image from "next/image";
 import { NewsCard } from "@/app/components/News/NewsCard";
 import { POSTS } from "@/app/data/posts";

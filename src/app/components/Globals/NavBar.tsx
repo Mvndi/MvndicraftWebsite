@@ -5,7 +5,6 @@ import Image from "next/image";
 import { useState } from "react";
 import { DiscordIcon, TwitterIcon, YoutubeIcon } from "@/app/components/Util/Icons";
 import { ShoppingCart, Map, Menu, X, Music } from "lucide-react";
-import mvndilogo from "../../../../public/image/mvndilogo.png";
 import ServerStatus from "../Util/ServerStatus";
 
 export default function Heading() {
@@ -69,7 +68,7 @@ export default function Heading() {
                 <div className="max-w-7xl mx-auto px-8 flex justify-between items-center">
                     <div className="flex items-center text-2xl">
                         <Link href="/">
-                            <Image src={mvndilogo} alt="logo" />
+                            <Image src="/image/mvndilogo.png" alt="logo" width={200} height={60} />
                         </Link>
                         <ServerStatus />
                     </div>

@@ -23,30 +23,34 @@ export default function Heading() {
     }
 
     return (
-        <main className="relative z-10 max-w-full min-h-[95vh] mx-auto px-4 md:px-8 py-24 flex flex-col justify-center items-center gap-12" role="main" aria-label="Mvndicraft - Medieval Geopolitical Minecraft Server">
-            <div className="absolute inset-0 bg-[#FF813D] opacity-45 z-0" aria-hidden="true" />
-
-            <div
-                className="absolute inset-0 z-0"
-                style={{
-                    background: 'linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(11,11,15,0.7) 38%, rgba(11,11,15,1) 100%)'
-                }}
-                aria-hidden="true"
-            />
+        <main
+            className="relative z-10 w-full min-h-[95vh] py-24 flex flex-col justify-center items-center gap-12 overflow-hidden"
+            role="main"
+            aria-label="Mvndicraft - Medieval Geopolitical Minecraft Server"
+        >
 
             <video
                 autoPlay
                 loop
                 muted
                 playsInline
-                className="absolute inset-0 w-full h-[95vh] object-cover -z-10"
+                className="absolute inset-0 w-full h-full object-cover z-0"
                 aria-label="Mvndicraft gameplay video showcasing medieval warfare and kingdom building"
             >
                 <source src="/video/mvndi.mp4" type="video/mp4" />
-                Your browser does not support the video tag.
             </video>
 
-            <div className="relative z-10 flex flex-col items-center gap-8 md:gap-12 w-full">
+            <div className="absolute inset-0 bg-[#FF813D] opacity-45 z-10" aria-hidden="true" />
+
+            <div
+                className="absolute inset-0 z-10"
+                style={{
+                    background: 'linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(11,11,15,0.7) 38%, rgba(11,11,15,1) 100%)'
+                }}
+                aria-hidden="true"
+            />
+
+            <div className="relative z-20 flex flex-col items-center gap-8 md:gap-12 w-full px-4 md:px-8">
                 <header>
                     <h1 className="text-3xl sm:text-4xl md:text-6xl text-center font-black leading-[0.85] tracking-tighter uppercase max-w-4xl">
                         <span className="text-white">Join us for an unparalleled journey</span>
@@ -72,7 +76,7 @@ export default function Heading() {
                 </div>
 
                 <nav className="flex flex-col items-center gap-4 w-full" aria-label="Main navigation">
-                    <div className="flex flex-col sm:flex-row justify-center gap-4 w-full px-4 sm:px-0">
+                    <div className="flex flex-col sm:flex-row justify-center gap-4 w-full">
                         <div className="bg-white/10 backdrop-blur-sm p-2 rounded-2xl transition-transform duration-300 hover:scale-105 w-full sm:w-auto">
                             <button
                                 onClick={() => handleScrollTo("discover")}

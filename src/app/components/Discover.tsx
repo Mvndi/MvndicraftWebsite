@@ -1,16 +1,16 @@
 "use client";
 
 import Image from "next/image";
-import chivalry from "../../../public/image/chivalry.png";
-
 export default function Discover() {
     return (
         <section id="discover" className="max-w-7xl mt-10 mx-auto px-4 md:px-8" aria-labelledby="discover-heading">
             <div className="flex flex-col md:flex-row justify-between items-start gap-8 md:gap-12">
                 <figure className="w-full md:w-1/2">
                     <Image
-                        src={chivalry}
+                        src="/image/chivalry.png"
                         alt="Medieval warriors on horseback charging into battle on the Mvndicraft server"
+                        width={800}
+                        height={600}
                         className="rounded-xl hover:scale-105 transition-transform duration-300 w-full"
                     />
                     <figcaption className="sr-only">Medieval cavalry warfare on Mvndicraft server</figcaption>

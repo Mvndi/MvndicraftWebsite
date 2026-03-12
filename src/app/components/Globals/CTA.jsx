@@ -2,14 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import KinoThumbnail from "../../../../public/image/KinoThumbnail.png";
 import { DiscordIcon } from "@/app/components/Util/Icons";
 
 export default function CTA() {
     return (
         <section className="relative w-full py-20 md:py-32 overflow-hidden">
             <Image
-                src={KinoThumbnail}
+                src="/image/KinoThumbnail.png"
                 alt="Join Mvndicraft"
                 fill
                 className="object-cover object-center"

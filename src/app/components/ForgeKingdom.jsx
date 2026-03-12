@@ -2,8 +2,6 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import army from "../../../public/image/army.png";
-
 export default function ForgeKingdom() {
     return (
         <section className="w-full bg-[#14141B] py-16 mt-10" aria-labelledby="kingdom-heading">
@@ -19,7 +17,7 @@ export default function ForgeKingdom() {
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                     <figure className="md:col-span-2 w-full">
-                        <Image src={army} alt="Medieval army formation with soldiers in armor and banners on Mvndicraft server" className="w-full h-auto rounded-lg shadow-xl" priority />
+                        <Image src="/image/army.png" alt="Medieval army formation with soldiers in armor and banners on Mvndicraft server" width={800} height={600} className="w-full h-auto rounded-lg shadow-xl" priority />
                         <figcaption className="sr-only">Medieval warfare and kingdom building on Mvndicraft</figcaption>
                     </figure>
                     <div className="md:col-span-1 flex flex-col gap-4">
