@@ -25,7 +25,7 @@ export default function Heading() {
                         </Link>
                         <Link href="https://mvndi.ffm.to/symphoniaemvndi" target="_blank" rel="noreferrer" className="hover:bg-[#4d4d4d] p-2 transition-colors">
                             <Music className="w-4 h-4" />
-                        </Link>                        
+                        </Link>
                     </div>
                     <div className="flex text-white items-center">
                         <Link href="https://discord.com/invite/2BP6h8Ssta" target="_blank" rel="noreferrer" className="text-sm flex items-center gap-1 hover:bg-[#4d4d4d] h-8.75 w-24 transition-colors justify-center">
@@ -38,25 +38,29 @@ export default function Heading() {
                 </div>
             </div>
 
-<div className="md:hidden bg-black h-8.75">
-    <div className="flex justify-center items-center h-full gap-4 text-white text-xs font-bold uppercase tracking-wider">
-        <Link href="https://discord.com/invite/2BP6h8Ssta" target="_blank" rel="noreferrer" className="flex items-center gap-1.5 hover:text-[#E2B714] transition-colors px-2 h-full">
-            <DiscordIcon className="w-3.5 fill-white" /> Discord
-        </Link>
-        <span className="text-[#333]">|</span>
-        <Link href="https://map.mvndicraft.net/" target="_blank" rel="noreferrer" className="flex items-center gap-1.5 hover:text-[#E2B714] transition-colors px-2 h-full">
-            <Map className="w-3.5" /> Map
-        </Link>
-        <span className="text-[#333]">|</span>
-        <Link href="https://x.com/mvndicraft" target="_blank" rel="noreferrer" className="flex items-center hover:text-[#E2B714] transition-colors px-2 h-full">
-            <TwitterIcon className="w-3.5 h-3.5" />
-        </Link>
-        <span className="text-[#333]">|</span>
-        <Link href="https://www.youtube.com/@mvndicraft4233" target="_blank" rel="noreferrer" className="flex items-center hover:text-[#E2B714] transition-colors px-2 h-full">
-            <YoutubeIcon className="w-3.5 h-3.5" />
-        </Link>
-    </div>
-</div>
+            <div className="md:hidden bg-black h-8.75">
+                <div className="flex justify-center items-center h-full gap-4 text-white text-xs font-bold uppercase tracking-wider">
+                    <Link href="https://mvndi.ffm.to/symphoniaemvndi" target="_blank" rel="noreferrer" className="hover:bg-[#4d4d4d] p-2 transition-colors">
+                        <Music className="w-4 h-4" />
+                    </Link>
+                    <Link href="https://discord.com/invite/2BP6h8Ssta" target="_blank" rel="noreferrer" className="flex items-center gap-1.5 hover:text-[#E2B714] transition-colors px-2 h-full">
+                        <DiscordIcon className="w-3.5 fill-white" /> Discord
+                    </Link>
+                    <span className="text-[#333]">|</span>
+                    <Link href="https://map.mvndicraft.net/" target="_blank" rel="noreferrer" className="flex items-center gap-1.5 hover:text-[#E2B714] transition-colors px-2 h-full">
+                        <Map className="w-3.5" /> Map
+                    </Link>
+
+                    <span className="text-[#333]">|</span>
+                    <Link href="https://x.com/mvndicraft" target="_blank" rel="noreferrer" className="flex items-center hover:text-[#E2B714] transition-colors px-2 h-full">
+                        <TwitterIcon className="w-3.5 h-3.5" />
+                    </Link>
+                    <span className="text-[#333]">|</span>
+                    <Link href="https://www.youtube.com/@mvndicraft4233" target="_blank" rel="noreferrer" className="flex items-center hover:text-[#E2B714] transition-colors px-2 h-full">
+                        <YoutubeIcon className="w-3.5 h-3.5" />
+                    </Link>
+                </div>
+            </div>
 
 
             <div className="fixed inset-0 opacity-20 pointer-events-none bg-[radial-gradient(circle_at_50%_50%,#1f2937_0%,#080808_100%)]" />
