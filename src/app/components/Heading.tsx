@@ -66,12 +66,13 @@ export default function Heading() {
                 <nav className="flex flex-col items-center gap-4 w-full" aria-label="Main navigation">
                     <div className="flex flex-col sm:flex-row justify-center gap-4 w-full px-4 sm:px-0">
                         <div className="bg-white/10 backdrop-blur-sm p-2 rounded-2xl transition-transform duration-300 hover:scale-105 w-full sm:w-auto">
-                            <button 
+                            <Link 
+                                href="#discover"
                                 className="bg-[#26262a] text-white w-full sm:w-auto px-8 md:px-12 py-4 md:py-5 font-black uppercase tracking-widest duration-300 rounded-md cursor-pointer h-[60px] md:h-[72px] flex items-center justify-center gap-3"
                                 aria-label="Discover game features and gameplay"
                             >
                                 <Crown className="w-5 h-5" aria-hidden="true" /> Discover the game
-                            </button>
+                            </Link>
                         </div>
 
                         <div className="bg-white/10 backdrop-blur-sm p-2 rounded-2xl transition-transform duration-300 hover:scale-105 w-full sm:w-auto">

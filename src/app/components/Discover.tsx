@@ -5,7 +5,7 @@ import chivalry from "../../../public/image/chivalry.png";
 
 export default function Discover() {
     return (
-        <section className="max-w-7xl mt-10 mx-auto px-4 md:px-8" aria-labelledby="discover-heading">
+        <section id="discover" className="max-w-7xl mt-10 mx-auto px-4 md:px-8" aria-labelledby="discover-heading">
             <div className="flex flex-col md:flex-row justify-between items-start gap-8 md:gap-12">
                 <figure className="w-full md:w-1/2">
                     <Image

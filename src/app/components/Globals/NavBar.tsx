@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState } from "react";
 import { DiscordIcon, TwitterIcon, YoutubeIcon } from "@/app/components/Util/Icons";
-import { ShoppingCart, Map, Menu, X } from "lucide-react";
+import { ShoppingCart, Map, Menu, X, Music } from "lucide-react";
 import mvndilogo from "../../../../public/image/mvndilogo.png";
 import ServerStatus from "../Util/ServerStatus";
 
@@ -23,6 +23,9 @@ export default function Heading() {
                         <Link href="https://www.youtube.com/@mvndicraft4233" target="_blank" rel="noreferrer" className="hover:bg-[#4d4d4d] p-2 transition-colors">
                             <YoutubeIcon className="w-4 h-4" />
                         </Link>
+                        <Link href="https://mvndi.ffm.to/symphoniaemvndi" target="_blank" rel="noreferrer" className="hover:bg-[#4d4d4d] p-2 transition-colors">
+                            <Music className="w-4 h-4" />
+                        </Link>                        
                     </div>
                     <div className="flex text-white items-center">
                         <Link href="https://discord.com/invite/2BP6h8Ssta" target="_blank" rel="noreferrer" className="text-sm flex items-center gap-1 hover:bg-[#4d4d4d] h-8.75 w-24 transition-colors justify-center">
