@@ -60,14 +60,14 @@ export default function Heading() {
                         role="button"
                         tabIndex={0}
                         onKeyDown={(e) => { if (e.key === 'Enter' || e.key === ' ') handleCopy(); }}
-                        className="group flex items-center gap-3 bg-[#080808]/60 border border-[#333] px-5 md:px-8 py-3 md:py-4 rounded-full backdrop-blur-md hover:border-[#E2B714] cursor-pointer transition-all"
+                        className="group flex items-center gap-3 bg-[#080808]/60 border border-[#333] px-5 md:px-8 py-3 md:py-4 rounded-full backdrop-blur-md hover:border-[#FFD700] cursor-pointer transition-all"
                         aria-label="Copy server IP address to clipboard"
                     >
                         <span className="text-gray-400 text-xs md:text-sm uppercase tracking-widest">Server IP:</span>
                         <code className="text-white font-mono font-bold text-sm md:text-base">mc.mvndicraft.net</code>
                     </div>
                     {copied && (
-                        <span className="absolute -bottom-8 text-[#E2B714] text-xs font-bold uppercase" role="status" aria-live="polite">Copied!</span>
+                        <span className="absolute -bottom-8 text-[#FFD700] text-xs font-bold uppercase" role="status" aria-live="polite">Copied!</span>
                     )}
                 </div>
 
@@ -88,7 +88,7 @@ export default function Heading() {
                                 href="https://discord.com/invite/2BP6h8Ssta"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="bg-[#E2B714] text-black w-full sm:w-auto px-8 md:px-12 py-4 md:py-5 font-black uppercase tracking-widest rounded-md cursor-pointer h-[60px] md:h-[72px] flex items-center justify-center gap-3"
+                                className="bg-[#FFD700] text-black w-full sm:w-auto px-8 md:px-12 py-4 md:py-5 font-black uppercase tracking-widest rounded-md cursor-pointer h-[60px] md:h-[72px] flex items-center justify-center gap-3"
                                 aria-label="Join our Discord community"
                             >
                                 <DiscordIcon className="fill-black w-5 h-5 md:w-6 md:h-6" aria-hidden="true" />
@@ -96,7 +96,7 @@ export default function Heading() {
                             </Link>
                         </div>
                     </div>
-                    <p className="font-light text-gray-300 text-sm">Java edition only</p>
+                    <p className="font-light text-gray-300 text-sm">Version <span className="font-bold">1.21.11</span> | Java edition only</p>
                 </nav>
             </div>
         </main>

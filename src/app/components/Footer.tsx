@@ -4,9 +4,9 @@ import Link from "next/link";
 import { DiscordIcon, TwitterIcon, YoutubeIcon } from "@/app/components/Util/Icons";
 
 const socialLinks = [
-    { icon: DiscordIcon, href: "https://discord.mvndicraft.net/" },
-    { icon: TwitterIcon, href: "https://x.com/mvndicraft" },
-    { icon: YoutubeIcon, href: "https://www.youtube.com/@mvndicraft4233" },
+    { icon: DiscordIcon, href: "https://discord.mvndicraft.net/", label: "Join Discord server" },
+    { icon: TwitterIcon, href: "https://x.com/mvndicraft", label: "Follow on Twitter" },
+    { icon: YoutubeIcon, href: "https://www.youtube.com/@mvndicraft4233", label: "Follow on YouTube" },
 ];
 
 const footerLinks = {
@@ -30,10 +30,10 @@ export default function Footer() {
                 <div className="col-span-2">
                     <h3 className="text-xl font-black uppercase tracking-wider text-white mb-6">MvndiCraft</h3>
 
-                    <p className="text-[#E2B714] text-sm italic mb-2 font-serif">
+                    <p className="text-[#FFD700] text-sm italic mb-2 font-serif">
                         "Non nobis solum, sed omnibus."
                     </p>
-                    <p className="text-[#666] text-xs mb-6 border-l-2 border-[#E2B714] pl-3">
+                    <p className="text-[#666] text-xs mb-6 border-l-2 border-[#FFD700] pl-3">
                         Not for ourselves alone, but for everyone.
                     </p>
 
@@ -43,7 +43,7 @@ export default function Footer() {
 
                     <div className="flex gap-3">
                         {socialLinks.map((social, i) => (
-                            <Link key={i} href={social.href} target="_blank" rel="noreferrer" className="w-10 h-10 bg-[#111] flex items-center justify-center hover:bg-[#4d4d4d] transition-all duration-300">
+                            <Link key={i} href={social.href} target="_blank" rel="noreferrer" className="w-10 h-10 bg-[#111] flex items-center justify-center hover:bg-[#4d4d4d] transition-all duration-300" aria-label={social.label}>
                                 <social.icon className="w-4 h-4 fill-white" />
                             </Link>
                         ))}
@@ -52,7 +52,7 @@ export default function Footer() {
 
                 {(Object.keys(footerLinks) as Array<keyof typeof footerLinks>).map((section) => (
                     <div key={section} className="col-span-1">
-                        <h4 className="text-xs font-bold uppercase text-[#E2B714] tracking-[0.2em] mb-6">
+                        <h4 className="text-xs font-bold uppercase text-[#FFD700] tracking-[0.2em] mb-6">
                             {section}
                         </h4>
                         <ul className="space-y-4">
@@ -73,13 +73,13 @@ export default function Footer() {
                 <p>© 2026 MvndiCraft. All rights reserved.</p>
                 <p className="mt-2">
                     Created by{" "}
-                    <Link href="https://matthieuclaessens.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-[#E2B714] transition-colors underline underline-offset-4">
+                    <Link href="https://matthieuclaessens.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-[#FFD700] transition-colors underline underline-offset-4">
                         Matthieu CLAESSENS
                     </Link> (Nenfal)
                 </p>
                 <p className="mt-5 text-[#666] px-4 md:px-0">
                     This site is not affiliated with Mojang or Microsoft Studios. For inquiries:{" "}
-                    <a href="mailto:admin@mvndicraft.net" className="hover:text-[#E2B714] transition-colors underline underline-offset-4">
+                    <a href="mailto:admin@mvndicraft.net" className="hover:text-[#FFD700] transition-colors underline underline-offset-4">
                         admin@mvndicraft.net
                     </a>
                 </p>

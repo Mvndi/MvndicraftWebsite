@@ -17,12 +17,12 @@ export default function Discover() {
                 </figure>
                 <article className="w-full md:w-1/2 text-left md:text-right md:mt-10 flex flex-col gap-4">
                     <header>
-                        <span className="text-[#E2B714] text-xs font-black uppercase tracking-[0.3em]">
+                        <span className="text-[#FFD700] text-xs font-black uppercase tracking-[0.3em]">
                             Discover Mvndicraft
                         </span>
                         <h2 id="discover-heading" className="text-white text-3xl md:text-4xl font-black uppercase tracking-tighter leading-[0.9]">
                             A world forged <br />
-                            <span className="text-[#E2B714]">in conflict</span>
+                            <span className="text-[#FFD700]">in conflict</span>
                         </h2>
                     </header>
                     <p className="text-gray-300 text-sm md:text-base leading-relaxed">

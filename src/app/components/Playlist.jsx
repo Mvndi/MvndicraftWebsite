@@ -6,7 +6,7 @@ export default function Playlist() {
     return (
         <section className="max-w-4xl mx-auto px-5 py-16" aria-labelledby="playlist-heading">
             <header className="text-center mb-8">
-                <h2 id="playlist-heading" className="text-[#E2B714] text-3xl md:text-4xl font-black uppercase tracking-tighter leading-[0.9]">
+                <h2 id="playlist-heading" className="text-[#FFD700] text-3xl md:text-4xl font-black uppercase tracking-tighter leading-[0.9]">
                     <Music className="w-8 h-8 md:w-10 md:h-10 inline-block mr-2" aria-hidden="true" />
                     Original soundtrack
                 </h2>
@@ -33,7 +33,7 @@ export default function Playlist() {
                             href="https://open.spotify.com/album/6BCqWyGakRLnKDfnEVAj7y" 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="inline-block bg-[#E2B714] text-[#111114] font-bold uppercase tracking-wider px-6 py-3 rounded hover:bg-yellow-500 transition-all"
+                            className="inline-block bg-[#FFD700] text-[#111114] font-bold uppercase tracking-wider px-6 py-3 rounded hover:bg-yellow-500 transition-all"
                         >
                             Open Playlist on Spotify
                         </a>
