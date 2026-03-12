@@ -81,6 +81,8 @@ export default function RootLayout({
         suppressHydrationWarning
         className={`${metamorphous.variable} ${geistMono.variable} antialiased leading-relaxed`}
       >
+        <div className="fixed inset-0 opacity-20 pointer-events-none -z-10 bg-[radial-gradient(circle_at_50%_50%,#1f2937_0%,#080808_100%)]" />
+
         <NavBar />
         <div className="min-h-screen">
           {children}
