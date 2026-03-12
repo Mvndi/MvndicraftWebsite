@@ -77,7 +77,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${metamorphous.variable} ${geistMono.variable} antialiased leading-relaxed`}>
+      <body
+        suppressHydrationWarning
+        className={`${metamorphous.variable} ${geistMono.variable} antialiased leading-relaxed`}
+      >
         <NavBar />
         <div className="min-h-screen">
           {children}
@@ -88,4 +91,3 @@ export default function RootLayout({
     </html>
   );
 }
-
