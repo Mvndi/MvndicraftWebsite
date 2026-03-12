@@ -8,7 +8,7 @@ export default function Playlist() {
             <header className="text-center mb-8">
                 <h2 id="playlist-heading" className="text-[#E2B714] text-3xl md:text-4xl font-black uppercase tracking-tighter leading-[0.9]">
                     <Music className="w-8 h-8 md:w-10 md:h-10 inline-block mr-2" aria-hidden="true" />
-                    Our Medieval Playlist
+                    Original soundtrack
                 </h2>
                 <p className="text-gray-300 text-sm md:text-base mt-4 max-w-2xl mx-auto">
                     Immerse yourself in the medieval atmosphere with our carefully curated playlist featuring epic orchestral music and authentic medieval compositions that enhance your Mvndicraft gaming experience.
