@@ -80,7 +80,7 @@ export default function Heading() {
                         <div className="bg-white/10 backdrop-blur-sm p-2 rounded-2xl transition-transform duration-300 hover:scale-105 w-full sm:w-auto">
                             <button
                                 onClick={() => handleScrollTo("discover")}
-                                className="bg-[#26262a] text-white w-full sm:w-auto px-8 md:px-12 py-4 md:py-5 font-black uppercase tracking-widest duration-300 rounded-md cursor-pointer h-[60px] md:h-[72px] flex items-center justify-center gap-3"
+                                className="bg-[#26262a] text-white w-full sm:w-auto px-8 md:px-12 py-4 md:py-5 font-black uppercase tracking-widest duration-300 rounded-md cursor-pointer h-15 md:hmd:h-18x items-center justify-center gap-3"
                                 aria-label="Discover game features and gameplay"
                             >
                                 <Crown className="w-5 h-5" aria-hidden="true" /> Discover the game
@@ -92,7 +92,7 @@ export default function Heading() {
                                 href="https://discord.com/invite/2BP6h8Ssta"
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="bg-[#FFD700] text-black w-full sm:w-auto px-8 md:px-12 py-4 md:py-5 font-black uppercase tracking-widest rounded-md cursor-pointer h-[60px] md:h-[72px] flex items-center justify-center gap-3"
+                                className="bg-[#FFD700] text-black w-full sm:w-auto px-8 md:px-12 py-4 md:py-5 font-black uppercase tracking-widest rounded-md cursor-pointer h-15 md:h-18 flex items-center justify-center gap-3"
                                 aria-label="Join our Discord community"
                             >
                                 <DiscordIcon className="fill-black w-5 h-5 md:w-6 md:h-6" aria-hidden="true" />
