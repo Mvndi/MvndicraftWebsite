@@ -1,4 +1,5 @@
 "use client";
+
 import { useEffect, useState } from 'react';
 
 export default function ServerStatus() {
@@ -9,9 +10,9 @@ export default function ServerStatus() {
         setMounted(true);
         const fetchStatus = async () => {
             try {
-                const res = await fetch('https://api.mcsrvstat.us/2/mc.mvndicraft.net');
+                const res = await fetch('/api/mc-status');
                 const data = await res.json();
-                setPlayers(data.players?.online ?? 0);
+                setPlayers(data.players);
             } catch {
                 setPlayers(0);
             }
