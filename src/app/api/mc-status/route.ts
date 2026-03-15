@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import mc from 'minecraftstatuspinger';
 
-export const dynamic = 'force-dynamic'; // ✅ désactive le cache
+export const dynamic = 'force-dynamic';
 
 export async function GET() {
     try {
