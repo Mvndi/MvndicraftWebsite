@@ -1,15 +1,20 @@
+export const runtime = 'edge';
+
 import { NextResponse } from "next/server";
-import mc from 'minecraftstatuspinger';
 
 export async function GET() {
     try {
-        const result = await mc.lookup({
-            host: 'mc.mvndicraft.net',
-            port: 25565,
-            timeout: 5000
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 5000);
+        
+        const res = await fetch('https://api.mcsrvstat.us/2/mc.mvndicraft.net', {
+            signal: controller.signal
         });
-        return NextResponse.json({
-            players: result.status?.players?.online ?? 0
+        clearTimeout(timeoutId);
+        
+        const data = await res.json();
+        return NextResponse.json({ 
+            players: data.players?.online ?? 0 
         });
     } catch {
         return NextResponse.json({ players: 0 });
