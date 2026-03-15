@@ -28,7 +28,7 @@ export default function Discover() {
                     <p className="text-gray-300 text-sm md:text-base leading-relaxed">
                         Explore a realm where the rise and fall of nations intertwine. Build grand citadels,
                         forge iron alliances, and wage epic wars for the conquest of the known world.
-                        Prepare for a limitless journey on MvndiCraft —{" "}
+                        Prepare for a limitless journey on Mvndicraft —{" "}
                         <span className="text-white font-semibold">the birthplace of your legend.</span>
                     </p>
 

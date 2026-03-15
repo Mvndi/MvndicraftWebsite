@@ -28,7 +28,7 @@ export default function Footer() {
             <div className="max-w-7xl mx-auto px-4 md:px-8 grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
 
                 <div className="col-span-2">
-                    <h3 className="text-xl font-black uppercase tracking-wider text-white mb-6">MvndiCraft</h3>
+                    <h3 className="text-xl font-black uppercase tracking-wider text-white mb-6">Mvndicraft</h3>
 
                     <p className="text-[#FFD700] text-sm italic mb-2 font-serif">
                         "Non nobis solum, sed omnibus."
@@ -70,7 +70,7 @@ export default function Footer() {
             </div>
 
             <div className="max-w-7xl mx-auto px-4 md:px-8 mt-16 md:mt-20 pt-8 border-t border-[#1a1a1f] text-center text-[#666] text-xs">
-                <p>© 2026 MvndiCraft. All rights reserved.</p>
+                <p>© 2026 Mvndicraft. All rights reserved.</p>
                 <p className="mt-2">
                     Created by{" "}
                     <Link href="https://matthieuclaessens.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-[#888] hover:text-[#FFD700] transition-colors underline underline-offset-4">
