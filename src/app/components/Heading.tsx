@@ -37,7 +37,7 @@ export default function Heading() {
                 className="absolute inset-0 w-full h-full object-cover z-0"
                 aria-label="Mvndicraft gameplay video showcasing medieval warfare and kingdom building"
             >
-                <source src="https://raw.githubusercontent.com/MatthieuClaessens/MvndicraftWebsite/refs/heads/main/public/video/mvndi.mp4" type="video/mp4" />
+                <source src="https://huggingface.co/datasets/ewof/mvndi/resolve/main/mvndi.mp4" type="video/mp4" />
             </video>
 
             <div className="absolute inset-0 bg-[#FF813D] opacity-45 z-10" aria-hidden="true" />
