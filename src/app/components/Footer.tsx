@@ -69,11 +69,11 @@ export default function Footer() {
 
             </div>
 
-            <div className="max-w-7xl mx-auto px-4 md:px-8 mt-16 md:mt-20 pt-8 border-t border-[#1a1a1f] text-center text-[#444] text-xs">
+            <div className="max-w-7xl mx-auto px-4 md:px-8 mt-16 md:mt-20 pt-8 border-t border-[#1a1a1f] text-center text-[#666] text-xs">
                 <p>© 2026 MvndiCraft. All rights reserved.</p>
                 <p className="mt-2">
                     Created by{" "}
-                    <Link href="https://matthieuclaessens.vercel.app/" target="_blank" rel="noopener noreferrer" className="hover:text-[#FFD700] transition-colors underline underline-offset-4">
+                    <Link href="https://matthieuclaessens.vercel.app/" target="_blank" rel="noopener noreferrer" className="text-[#888] hover:text-[#FFD700] transition-colors underline underline-offset-4">
                         Matthieu CLAESSENS
                     </Link> (Nenfal)
                 </p>

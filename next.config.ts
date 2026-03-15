@@ -1,7 +1,6 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
   reactCompiler: true,
   images: {
     remotePatterns: [
@@ -10,6 +9,15 @@ const nextConfig: NextConfig = {
         hostname: '**',
       },
     ],
+  },
+  async redirects() {
+    return [
+      {
+        source: '/guides/:path*',
+        destination: 'https://wiki.mvndicraft.net/guides/:path*',
+        permanent: true,
+      },
+    ]
   },
 };
 
