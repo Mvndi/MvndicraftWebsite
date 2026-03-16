@@ -3,38 +3,38 @@ import { Music } from "lucide-react";
 
 export default function Playlist() {
     return (
-        <section className="w-full max-w-4xl mx-auto px-4 sm:px-5 py-12 sm:py-16" aria-labelledby="playlist-heading">
-            <header className="text-center mb-6 sm:mb-8">
-                <h2 id="playlist-heading" className="text-[#FFD700] text-2xl sm:text-3xl md:text-4xl font-black uppercase tracking-tighter leading-[0.9]">
-                    <Music className="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 inline-block mr-2 align-middle" aria-hidden="true" />
+        <section className="w-full max-w-4xl mx-auto px-4 sm:px-5 pt-10 sm:py-12 mt-10" aria-labelledby="playlist-heading"> 
+            <header className="text-center mb-4 sm:mb-6"> 
+                <h2 id="playlist-heading" className="text-[#FFD700] text-xl sm:text-2xl md:text-3xl lg:text-4xl font-black uppercase tracking-tight leading-tight mb-2"> 
+                    <Music className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8 inline-block mr-1.5 align-middle relative top-0.5" aria-hidden="true" />
                     Original soundtrack
                 </h2>
-                <p className="text-gray-300 text-xs sm:text-sm md:text-base mt-3 sm:mt-4 max-w-xl sm:max-w-2xl mx-auto leading-relaxed">
-                    Immerse yourself in the medieval atmosphere with our carefully curated playlist featuring epic orchestral music and authentic medieval compositions that enhance your Mvndicraft gaming experience.
+                <p className="text-gray-400 text-xs sm:text-sm leading-relaxed max-w-md sm:max-w-lg mx-auto px-2"> 
+                    Immerse yourself in the medieval atmosphere with epic orchestral music enhancing your Mvndicraft experience.
                 </p>
             </header>
-            <div className="relative w-full">
+            <div className="relative w-full mx-auto max-w-2xl">
                 <iframe
                     src="https://open.spotify.com/embed/album/6BCqWyGakRLnKDfnEVAj7y?utm_source=generator&theme=0"
                     width="100%"
-                    height="300"
+                    height="280"
                     frameBorder="0"
                     allow="autoplay *; clipboard-write; encrypted-media *; fullscreen *; picture-in-picture"
                     loading="lazy"
-                    className="w-full h-[300px] sm:h-[352px] rounded-xl"
+                    className="w-full h-[260px] sm:h-[300px] md:h-[352px] rounded-xl shadow-2xl"
                     title="Mvndicraft Medieval Playlist on Spotify"
                     aria-label="Spotify player for Mvndicraft medieval music playlist"
                 />
                 <noscript>
-                    <div className="bg-[#14141B] border border-[#2a2a2e] rounded-xl p-4 sm:p-6 text-center">
-                        <p className="text-gray-300 mb-3 sm:mb-4 text-xs sm:text-sm">Please enable JavaScript to view the Spotify playlist.</p>
+                    <div className="bg-[#14141B] border border-[#2a2a2e] rounded-xl p-3 sm:p-4 text-center mt-2">
+                        <p className="text-gray-400 mb-2 text-xs">Enable JavaScript for Spotify player.</p>
                         <a 
                             href="https://open.spotify.com/album/6BCqWyGakRLnKDfnEVAj7y" 
                             target="_blank" 
                             rel="noopener noreferrer"
-                            className="inline-block bg-[#FFD700] text-[#111114] font-bold uppercase tracking-wider px-4 sm:px-6 py-2 sm:py-3 rounded text-xs sm:text-sm hover:bg-yellow-500 transition-all"
+                            className="inline-block bg-[#FFD700] text-[#111114] font-bold uppercase tracking-wide px-3 sm:px-4 py-1.5 sm:py-2 rounded text-xs hover:bg-yellow-500 transition-all"
                         >
-                            Open Playlist on Spotify
+                            Open on Spotify
                         </a>
                     </div>
                 </noscript>

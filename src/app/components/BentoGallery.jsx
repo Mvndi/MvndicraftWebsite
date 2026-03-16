@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function BentoGallery() {
     return (
-        <section className="w-full max-w-7xl mx-auto px-4 md:px-8 mt-20" aria-labelledby="gallery-heading">
+        <section className="w-full max-w-7xl mx-auto px-4 md:px-8 md:mt-20" aria-labelledby="gallery-heading">
             <header className="text-center mb-10">
                 <span className="text-[#FFD700] text-xs font-black uppercase tracking-[0.3em]">What awaits you</span>
                 <h2 id="gallery-heading" className="text-white text-3xl md:text-4xl font-black uppercase tracking-tighter leading-[0.9] mt-3">
