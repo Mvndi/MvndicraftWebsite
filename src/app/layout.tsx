@@ -76,17 +76,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark"> 
       <body
         suppressHydrationWarning
-        className={`${metamorphous.variable} ${geistMono.variable} antialiased leading-relaxed`}
+        className={`${metamorphous.variable} ${geistMono.variable} antialiased leading-relaxed bg-[#0e1012] text-[#ededed] font-sans`}
       >
-        <div className="fixed inset-0 opacity-20 pointer-events-none -z-10 bg-[radial-gradient(circle_at_50%_50%,#1f2937_0%,#080808_100%)]" />
+        <div className="fixed inset-0 pointer-events-none -z-10 bg-[radial-gradient(circle_at_50%_50%,#0e1012_0%,#080808_100%)]" />
 
         <NavBar />
-        <div className="min-h-screen">
+        <main className="min-h-screen">
           {children}
-        </div>
+        </main>
         <Footer />
         <BackToTop />
       </body>
