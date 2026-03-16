@@ -50,7 +50,7 @@ export default function Heading() {
                 aria-hidden="true"
             />
 
-            <div className="relative z-20 flex flex-col items-center gap-8 md:gap-12 w-full px-4 md:px-8">
+            <div className="relative z-20 flex flex-col items-center gap-8 md:gap-12 w-full px-4 md:px-8 mt-12">
                 <header>
                     <h1 className="text-3xl sm:text-4xl md:text-6xl text-center font-black leading-[0.85] tracking-tighter uppercase max-w-4xl">
                         <span className="text-white">Join us for an unparalleled journey</span>

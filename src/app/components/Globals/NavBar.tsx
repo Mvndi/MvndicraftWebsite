@@ -18,7 +18,6 @@ export default function NavBar() {
             zIndex: 9999,
             width: '100%'
         }}>
-            {/* Top bar - desktop */}
             <div className="hidden md:block bg-black h-9">
                 <div className="max-w-7xl mx-auto flex justify-between items-center h-full px-4">
                     <div className="flex text-white items-center">
@@ -43,7 +42,6 @@ export default function NavBar() {
                 </div>
             </div>
 
-            {/* Top bar - mobile */}
             <div className="md:hidden bg-black h-9 border-b border-[#333]">
                 <div className="flex justify-center items-center h-full gap-3 text-white text-xs font-bold uppercase tracking-wider px-2">
                     <Link href="https://mvndi.ffm.to/symphoniaemvndi" target="_blank" rel="noreferrer" className="hover:bg-[#4d4d4d] p-1.5 transition-colors rounded" aria-label="Listen to Symphoniae Mvndi">
@@ -67,7 +65,6 @@ export default function NavBar() {
                 </div>
             </div>
 
-            {/* Main navigation */}
             <nav className="border-b border-[#333] bg-[#101015]/80 backdrop-blur-md">
                 <div className="max-w-7xl mx-auto px-4 md:px-8 flex justify-between items-center py-3">
                     <div className="flex items-center gap-3 text-xl md:text-2xl">
@@ -102,7 +99,6 @@ export default function NavBar() {
                     </button>
                 </div>
 
-                {/* Mobile menu dropdown */}
                 <div className={`md:hidden absolute top-full left-0 w-full border-t border-[#333] bg-[#101015]/95 backdrop-blur-md flex flex-col text-white text-xs uppercase font-black tracking-widest shadow-2xl transition-all duration-300 ease-in-out overflow-hidden ${
                     menuOpen 
                         ? "max-h-72 opacity-100 visible" 
