@@ -11,8 +11,9 @@ export default function CTA() {
                 src="/image/KinoThumbnail.png"
                 alt="Join Mvndicraft"
                 fill
-                className="object-cover object-center"
+                className="w-full h-full object-cover object-center"
             />
+
             <div className="absolute inset-0 bg-black/80" />
             <div className="relative z-10 flex flex-col items-center gap-6 text-center px-4 md:px-8">
                 <span className="text-[#FFD700] text-xs font-black uppercase tracking-[0.3em]">

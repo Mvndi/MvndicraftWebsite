@@ -1,17 +1,17 @@
 "use client";
-
 import Image from "next/image";
+
 export default function Discover() {
     return (
-        <section id="discover" className="max-w-7xl mt-10 mx-auto px-4 md:px-8" aria-labelledby="discover-heading">
-            <div className="flex flex-col md:flex-row justify-between items-start gap-8 md:gap-12">
+        <section id="discover" className="w-full max-w-7xl mt-10 mx-auto px-4 md:px-8" aria-labelledby="discover-heading">
+            <div className="flex flex-col md:flex-row justify-between items-start gap-8 md:gap-12 w-full">
                 <figure className="w-full md:w-1/2">
                     <Image
                         src="/image/chivalry.png"
                         alt="Medieval warriors on horseback charging into battle on the Mvndicraft server"
-                        width={800}
-                        height={600}
-                        className="rounded-xl hover:scale-105 transition-transform duration-300 w-full"
+                        width={9999}
+                        height={9999}
+                        className="w-full h-auto rounded-xl hover:scale-105 transition-transform duration-300 object-cover"
                     />
                     <figcaption className="sr-only">Medieval cavalry warfare on Mvndicraft server</figcaption>
                 </figure>
@@ -31,11 +31,10 @@ export default function Discover() {
                         Prepare for a limitless journey on Mvndicraft —{" "}
                         <span className="text-white font-semibold">the birthplace of your legend.</span>
                     </p>
-
                     <ul className="flex flex-wrap justify-start md:justify-end gap-2 mt-2" aria-label="Server features">
                         {["Custom Plugins", "Active Community", "Regular Events", "No Pay-to-Win"].map((tag) => (
                             <li key={tag}>
-                                <span className="bg-[#111115] border border-[#2a2a2e] text-gray-400 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">
+                                <span className="bg-black/50 border border-white/20 text-white/90 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">
                                     {tag}
                                 </span>
                             </li>

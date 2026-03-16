@@ -79,16 +79,20 @@ export default function RootLayout({
     <html lang="en" className="dark"> 
       <body
         suppressHydrationWarning
-        className={`${metamorphous.variable} ${geistMono.variable} antialiased leading-relaxed bg-[#0e1012] text-[#ededed] font-sans`}
+        className={`${metamorphous.variable} ${geistMono.variable} antialiased leading-relaxed text-[#ededed] font-sans bg-[#0e1012]`}
       >
-        <div className="fixed inset-0 pointer-events-none -z-10 bg-[radial-gradient(circle_at_50%_50%,#0e1012_0%,#080808_100%)]" />
+        <div className="fixed inset-0 pointer-events-none -z-10 bg-[#0e1012]" />
 
-        <NavBar />
-        <main className="min-h-screen">
-          {children}
-        </main>
-        <Footer />
-        <BackToTop />
+        <div className="flex flex-col min-h-screen">
+          <NavBar />
+          
+          <main className="flex-grow bg-[#0e1012]">
+            {children}
+          </main>
+          
+          <Footer />
+          <BackToTop />
+        </div>
       </body>
     </html>
   );

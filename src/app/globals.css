@@ -1,22 +1,10 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: #0e1012;
+  --color-foreground: #ededed;
   --font-sans: var(--font-metamorphous);
   --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 html {
@@ -24,12 +12,42 @@ html {
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: #0e1012 !important;
+  color: #ededed !important;
   font-family: var(--font-metamorphous), serif;
   line-height: 1.7;
 }
 
+[data-theme="dark"], html.dark {
+  --color-background: #0e1012;
+}
+
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
+}
+
+* { 
+  box-sizing: border-box; 
+}
+
+/* Anti-scroll absolu */
+html, body, #__next {
+  overflow-x: hidden !important;
+  max-width: 100vw !important;
+}
+
+img {
+  max-width: 100% !important;
+  height: auto !important;
+}
+
+/* Tailwind reset */
+@layer utilities {
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 }
