@@ -58,9 +58,9 @@ export default function NavBar() {
                     </button>
                 </div>
                 <div className={`md:hidden absolute w-full border-t border-[#333] bg-[#101015]/95 backdrop-blur-md flex flex-col text-white text-xs uppercase font-bold tracking-widest shadow-xl transition-all duration-300 overflow-hidden ${menuOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0 border-0"}`}>
-                    <Link href="#" onClick={() => setMenuOpen(false)} className="px-6 py-4 hover:bg-[#1a1a1f] hover:text-[#FFD700] transition-colors">Home</Link>
+                    <Link href="/" onClick={() => setMenuOpen(false)} className="px-6 py-4 hover:bg-[#1a1a1f] hover:text-[#FFD700] transition-colors">Home</Link>
                     <Link href="https://www.planetminecraft.com/server/mvndicraft-medieval-geopol/" target="_blank" rel="noreferrer" onClick={() => setMenuOpen(false)} className="px-6 py-4 hover:bg-[#1a1a1f] hover:text-[#FFD700] transition-colors">Vote</Link>
-                    <Link href="#" onClick={() => setMenuOpen(false)} className="px-6 py-4 bg-[#26262a] hover:text-[#FFD700] transition-colors">Wiki</Link>
+                    <Link href="https://wiki.mvndicraft.net/" onClick={() => setMenuOpen(false)} className="px-6 py-4 bg-[#26262a] hover:text-[#FFD700] transition-colors">Wiki</Link>
                     <Link href="https://www.patreon.com/Mvndicraft" target="_blank" rel="noreferrer" onClick={() => setMenuOpen(false)} className="px-6 py-4 border-t border-[#333] text-[#FFD700] flex items-center gap-2 hover:bg-[#1a1a1f] transition-colors">
                         <ShoppingCart width={14} /> Store
                     </Link>
