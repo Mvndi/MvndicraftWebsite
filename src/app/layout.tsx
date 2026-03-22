@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Metamorphous, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavBar from "./components/Globals/NavBar";
-import Footer from "./components/Footer";
+import Footer from "./components/Globals/Footer";
 import BackToTop from "./components/Globals/BackToTop";
 
 const geistMono = Geist_Mono({

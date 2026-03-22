@@ -12,7 +12,8 @@ const socialLinks = [
 const footerLinks = {
     platform: [
         { label: "Vote", href: "/https://www.planetminecraft.com/server/mvndicraft-medieval-geopol/" },
-        { label: "Wiki", href: "/#" },
+        { label: "Rules", href: "https://wiki.mvndicraft.net/rules.html" },
+        { label: "Wiki", href: "https://wiki.mvndicraft.net" },        
         { label: "Store", href: "https://www.patreon.com/Mvndicraft" },
     ],
     legal: [
