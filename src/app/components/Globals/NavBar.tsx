@@ -21,7 +21,7 @@ export default function NavBar() {
             <div className="hidden md:block bg-black h-9">
                 <div className="max-w-7xl mx-auto flex justify-between items-center h-full px-4">
                     <div className="flex text-white items-center">
-                        <Link href="https://x.com/mvndicraft" target="_blank" rel="noreferrer" className="hover:bg-[#4d4d4d] p-2 transition-colors rounded" aria-label="Follow on Twitter">
+                        <Link href="https://x.com/MVNDlCRAFT" target="_blank" rel="noreferrer" className="hover:bg-[#4d4d4d] p-2 transition-colors rounded" aria-label="Follow on Twitter">
                             <TwitterIcon className="w-4 h-4" />
                         </Link>
                         <Link href="https://www.youtube.com/@mvndicraft4233" target="_blank" rel="noreferrer" className="hover:bg-[#4d4d4d] p-2 transition-colors rounded" aria-label="Follow on YouTube">

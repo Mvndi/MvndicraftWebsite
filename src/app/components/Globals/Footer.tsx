@@ -5,7 +5,7 @@ import { DiscordIcon, TwitterIcon, YoutubeIcon } from "@/app/components/Util/Ico
 
 const socialLinks = [
     { icon: DiscordIcon, href: "https://discord.mvndicraft.net/", label: "Join Discord server" },
-    { icon: TwitterIcon, href: "https://x.com/mvndicraft", label: "Follow on Twitter" },
+    { icon: TwitterIcon, href: "https://x.com/MVNDlCRAFT", label: "Follow on Twitter" },
     { icon: YoutubeIcon, href: "https://www.youtube.com/@mvndicraft4233", label: "Follow on YouTube" },
 ];
 
