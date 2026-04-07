@@ -18,7 +18,7 @@ export default function TermsOfUsePage() {
                             Terms of Use
                         </h1>
                         <time className="text-sm text-[#888] font-mono bg-[#1E1E24] px-3 py-1 rounded-full border border-[#2a2a2e]">
-                            Last updated: March 2026
+                            Last updated: April 2026
                         </time>
                     </header>
 

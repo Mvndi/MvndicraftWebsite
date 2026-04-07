@@ -20,7 +20,7 @@ export default function CTA() {
                     The realm is waiting
                 </span>
                 <h2 className="text-white text-4xl md:text-7xl font-black uppercase tracking-tighter leading-[0.9] max-w-3xl">
-                    Your legend <br />
+                    Your adventure <br />
                     <span className="text-[#FFD700]">starts now</span>
                 </h2>
                 <p className="text-white text-base md:text-xl max-w-xl font-semibold leading-relaxed tracking-wide px-2 md:px-0">
