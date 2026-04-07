@@ -79,8 +79,8 @@ export default function PrivacyPolicyPage() {
                             <h2 className="text-2xl font-bold text-white mb-3">7. Contact</h2>
                             <p>
                                 For any privacy-related questions, contact us at:{" "}
-                                <a href="mailto:contact@mvndicraft.com" className="text-[#0266c4] hover:underline">
-                                    contact@mvndicraft.com
+                                <a href="mailto:admin@mvndicraft.net" className="text-[#0266c4] hover:underline">
+                                    admin@mvndicraft.net
                                 </a>
                             </p>
                         </section>
