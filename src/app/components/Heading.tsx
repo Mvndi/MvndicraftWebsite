@@ -100,7 +100,7 @@ export default function Heading() {
                             </Link>
                         </div>
                     </div>
-                    <p className="font-light text-gray-300 text-sm">Version <span className="font-bold">1.21.11</span> | Java edition only</p>
+                    <p className="font-light text-gray-300 text-sm">Versions <span className="font-bold">1.21.11-26.3</span> | Java edition only</p>
                 </nav>
             </div>
         </main>
