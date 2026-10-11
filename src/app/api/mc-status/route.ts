@@ -6,6 +6,7 @@ export async function GET() {
         const timeoutId = setTimeout(() => controller.abort(), 5000);
         
         const res = await fetch('https://api.mcsrvstat.us/2/mc.mvndicraft.net', {
+            headers: { 'User-Agent': 'MvndicraftWebsite (https://mvndicraft.net)' },
             signal: controller.signal
         });
         clearTimeout(timeoutId);
