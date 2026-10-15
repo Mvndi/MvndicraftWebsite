@@ -13,8 +13,8 @@ const footerLinks = {
     platform: [
         { label: "Vote", href: "/https://www.planetminecraft.com/server/mvndicraft-medieval-geopol/" },
         { label: "Rules", href: "https://wiki.mvndicraft.net/rules.html" },
-        { label: "Wiki", href: "https://wiki.mvndicraft.net" },        
-        { label: "Store", href: "https://www.patreon.com/Mvndicraft" },
+        { label: "Wiki", href: "https://wiki.mvndicraft.net" },
+        { label: "Store", href: "https://store.mvndicraft.net/" },
     ],
     legal: [
         { label: "Terms of Use", href: "/terms-of-use" },
