@@ -85,7 +85,7 @@ export default function NavBar() {
                         <Link href="https://www.planetminecraft.com/server/mvndicraft-medieval-geopol/" target="_blank" rel="noreferrer" className="hover:text-[#FFD700] transition-colors px-2 py-1 rounded">Vote</Link>
                         <Link href="https://wiki.mvndicraft.net/rules.html" target="_blank" rel="noreferrer" className="hover:text-[#FFD700] transition-colors px-2 py-1 rounded">Rules</Link>
                         <Link href="https://wiki.mvndicraft.net/" target="_blank" rel="noreferrer" className="hover:text-[#FFD700] bg-[#26262a] px-6 py-2 rounded-md transition-all">Wiki</Link>
-                        <Link href="https://store.mvndicraft.net/" target="_blank" rel="noreferrer" className="border border-[#FFD700] flex px-6 py-2 hover:bg-[#FFD700] hover:text-black transition-all items-center rounded-md">
+                        <Link href="https://store.mvndicraft.net/" rel="noreferrer" className="border border-[#FFD700] flex px-6 py-2 hover:bg-[#FFD700] hover:text-black transition-all items-center rounded-md">
                             <ShoppingCart width={16} className="mr-2" /> Store
                         </Link>
                     </div>
@@ -117,7 +117,7 @@ export default function NavBar() {
                     <Link href="https://wiki.mvndicraft.net/" target="_blank" rel="noreferrer" onClick={() => setMenuOpen(false)} className="px-6 py-4 bg-[#26262a] hover:text-[#FFD700] transition-colors border-b border-[#333]">
                         Wiki
                     </Link>
-                    <Link href="https://store.mvndicraft.net/" target="_blank" rel="noreferrer" onClick={() => setMenuOpen(false)} className="px-6 py-4 border-t border-[#333] text-[#FFD700] flex items-center gap-2 hover:bg-[#1a1a1f] transition-colors">
+                    <Link href="https://store.mvndicraft.net/" rel="noreferrer" onClick={() => setMenuOpen(false)} className="px-6 py-4 border-t border-[#333] text-[#FFD700] flex items-center gap-2 hover:bg-[#1a1a1f] transition-colors">
                         <ShoppingCart width={16} className="ml-1" /> Store
                     </Link>
                 </div>

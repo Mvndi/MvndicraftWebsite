@@ -59,7 +59,7 @@ export default function Footer() {
                         <ul className="space-y-4">
                             {footerLinks[section].map((link) => (
                                 <li key={link.label}>
-                                    <Link href={link.href} target="_blank" rel="noreferrer" className="text-sm text-[#888] hover:text-white transition-colors">
+                                    <Link href={link.href} target={link.label === "Store" ? "_self" : "_blank"} rel="noreferrer" className="text-sm text-[#888] hover:text-white transition-colors">
                                         {link.label}
                                     </Link>
                                 </li>
