@@ -72,8 +72,8 @@ export default function NavBar() {
                             <Image
                                 src="/image/mvndilogo.png"
                                 alt="Mvndicraft logo"
-                                width={9999}
-                                height={9999}
+                                width={176}
+                                height={56}
                                 className="w-28 sm:w-36 md:w-44 h-10 sm:h-12 md:h-14 object-contain"
                             />
                         </Link>
