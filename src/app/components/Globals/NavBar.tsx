@@ -68,32 +68,32 @@ export default function NavBar() {
             <nav className="border-b border-[#333] bg-[#101015]/80 backdrop-blur-md">
                 <div className="max-w-7xl mx-auto px-4 md:px-8 flex justify-between items-center py-3">
                     <div className="flex items-center gap-3 text-xl md:text-2xl">
-                        <Link href="/" className="flex-shrink-0">
-                            <Image
-                                src="/image/mvndilogo.png"
-                                alt="Mvndicraft logo"
-                                width={176}
-                                height={56}
+                        <Link href="/" className="shrink-0">
+                            <Image 
+                                src="/image/mvndilogo.png" 
+                                alt="Mvndicraft logo" 
+                                width={9999} 
+                                height={9999}
                                 className="w-28 sm:w-36 md:w-44 h-10 sm:h-12 md:h-14 object-contain"
                             />
                         </Link>
                         <ServerStatus />
                     </div>
-
+                    
                     <div className="hidden md:flex gap-6 text-xs uppercase items-center font-black tracking-widest">
                         <Link href="/" className="hover:text-[#FFD700] transition-colors px-2 py-1 rounded">Home</Link>
-                        <Link href="https://www.planetminecraft.com/server/mvndicraft-medieval-geopol/" target="_blank" rel="noreferrer" className="hover:text-[#FFD700] transition-colors px-2 py-1 rounded">Vote</Link>
+                        <Link href="/vote" className="hover:text-[#FFD700] transition-colors px-2 py-1 rounded">Vote</Link>
                         <Link href="https://wiki.mvndicraft.net/rules.html" target="_blank" rel="noreferrer" className="hover:text-[#FFD700] transition-colors px-2 py-1 rounded">Rules</Link>
                         <Link href="https://wiki.mvndicraft.net/" target="_blank" rel="noreferrer" className="hover:text-[#FFD700] bg-[#26262a] px-6 py-2 rounded-md transition-all">Wiki</Link>
-                        <Link href="https://store.mvndicraft.net/" rel="noreferrer" className="border border-[#FFD700] flex px-6 py-2 hover:bg-[#FFD700] hover:text-black transition-all items-center rounded-md">
+                        <Link href="https://store.mvndicraft.net/" className="border border-[#FFD700] flex px-6 py-2 hover:bg-[#FFD700] hover:text-black transition-all items-center rounded-md">
                             <ShoppingCart width={16} className="mr-2" /> Store
                         </Link>
                     </div>
 
-                    <button
-                        className="md:hidden text-white p-2 hover:bg-[#26262a] rounded-md transition-colors"
-                        onClick={() => setMenuOpen(!menuOpen)}
-                        aria-label={menuOpen ? "Close menu" : "Open menu"}
+                    <button 
+                        className="md:hidden text-white p-2 hover:bg-[#121213] rounded-md transition-colors" 
+                        onClick={() => setMenuOpen(!menuOpen)} 
+                        aria-label={menuOpen ? "Close menu" : "Open menu"} 
                         aria-expanded={menuOpen}
                     >
                         {menuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -101,8 +101,8 @@ export default function NavBar() {
                 </div>
 
                 <div className={`md:hidden absolute top-full left-0 w-full border-t border-[#333] bg-[#101015]/95 backdrop-blur-md flex flex-col text-white text-xs uppercase font-black tracking-widest shadow-2xl transition-all duration-300 ease-in-out overflow-hidden ${
-                    menuOpen
-                        ? "max-h-72 opacity-100 visible"
+                    menuOpen 
+                        ? "max-h-72 opacity-100 visible" 
                         : "max-h-0 opacity-0 invisible"
                 }`}>
                     <Link href="/" onClick={() => setMenuOpen(false)} className="px-6 py-4 hover:bg-[#1a1a1f] hover:text-[#FFD700] transition-colors border-b border-[#333]">
@@ -113,11 +113,11 @@ export default function NavBar() {
                     </Link>
                     <Link href="https://wiki.mvndicraft.net/rules.html" target="_blank" rel="noreferrer" onClick={() => setMenuOpen(false)} className="px-6 py-4 hover:bg-[#1a1a1f] hover:text-[#FFD700] transition-colors border-b border-[#333]">
                         Rules
-                    </Link>
+                    </Link>                    
                     <Link href="https://wiki.mvndicraft.net/" target="_blank" rel="noreferrer" onClick={() => setMenuOpen(false)} className="px-6 py-4 bg-[#26262a] hover:text-[#FFD700] transition-colors border-b border-[#333]">
                         Wiki
                     </Link>
-                    <Link href="https://store.mvndicraft.net/" rel="noreferrer" onClick={() => setMenuOpen(false)} className="px-6 py-4 border-t border-[#333] text-[#FFD700] flex items-center gap-2 hover:bg-[#1a1a1f] transition-colors">
+                    <Link href="https://store.mvndicraft.net/" onClick={() => setMenuOpen(false)} className="px-6 py-4 border-t border-[#333] text-[#FFD700] flex items-center gap-2 hover:bg-[#1a1a1f] transition-colors">
                         <ShoppingCart width={16} className="ml-1" /> Store
                     </Link>
                 </div>

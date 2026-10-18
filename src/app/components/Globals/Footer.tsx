@@ -11,7 +11,7 @@ const socialLinks = [
 
 const footerLinks = {
     platform: [
-        { label: "Vote", href: "/https://www.planetminecraft.com/server/mvndicraft-medieval-geopol/" },
+        { label: "Vote", href: "https://store.mvndicraft.net/" },
         { label: "Rules", href: "https://wiki.mvndicraft.net/rules.html" },
         { label: "Wiki", href: "https://wiki.mvndicraft.net" },
         { label: "Store", href: "https://store.mvndicraft.net/" },
@@ -32,7 +32,7 @@ export default function Footer() {
                     <h3 className="text-xl font-black uppercase tracking-wider text-white mb-6">Mvndicraft</h3>
 
                     <p className="text-[#FFD700] text-sm italic mb-2 font-serif">
-                        "Non nobis solum, sed omnibus."
+                        &quot;Non nobis solum, sed omnibus.&quot;
                     </p>
                     <p className="text-[#666] text-xs mb-6 border-l-2 border-[#FFD700] pl-3">
                         Not for ourselves alone, but for everyone.
@@ -59,7 +59,7 @@ export default function Footer() {
                         <ul className="space-y-4">
                             {footerLinks[section].map((link) => (
                                 <li key={link.label}>
-                                    <Link href={link.href} target={link.label === "Store" ? "_self" : "_blank"} rel="noreferrer" className="text-sm text-[#888] hover:text-white transition-colors">
+                                    <Link href={link.href} className="text-sm text-[#888] hover:text-white transition-colors">
                                         {link.label}
                                     </Link>
                                 </li>
