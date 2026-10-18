@@ -79,7 +79,7 @@ export default function Footer() {
                     </Link> (Nenfal)
                 </p>
                 <p className="mt-5 text-[#666] px-4 md:px-0">
-                    This site is not affiliated with Mojang or Microsoft Studios. For inquiries:{" "}
+                    Not an official Minecraft product. Not approved by or associated with Mojang or Microsoft. For inquiries:{" "}
                     <a href="mailto:admin@mvndicraft.net" className="hover:text-[#FFD700] transition-colors underline underline-offset-4">
                         admin@mvndicraft.net
                     </a>
