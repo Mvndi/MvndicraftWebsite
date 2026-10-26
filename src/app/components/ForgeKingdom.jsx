@@ -41,7 +41,6 @@ export default function ForgeKingdom() {
                         </div>
                         <Link
                             href="https://map.mvndicraft.net/"
-                            target="_blank"
                             rel="noopener noreferrer"
                             className="w-full py-3 bg-[#FFD700] text-[#111114] font-black uppercase tracking-widest text-sm text-center rounded hover:bg-yellow-500 transition-all shadow-[0_0_15px_rgba(226,183,20,0.3)]"
                             aria-label="Open interactive server map"

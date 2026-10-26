@@ -35,7 +35,7 @@ export default function NavBar() {
                         <Link href="https://discord.com/invite/2BP6h8Ssta" target="_blank" rel="noreferrer" className="text-sm flex items-center gap-1 hover:bg-[#4d4d4d] px-4 py-2 transition-colors rounded-md">
                             <DiscordIcon className="w-4 fill-white" /> Discord
                         </Link>
-                        <Link href="https://map.mvndicraft.net/#minecraft_overworld;flat;108608,64,29328;1" target="_blank" rel="noreferrer" className="text-sm flex items-center gap-1 hover:bg-[#4d4d4d] px-4 py-2 transition-colors rounded-md">
+                        <Link href="https://map.mvndicraft.net/#minecraft_overworld;flat;108608,64,29328;1" rel="noreferrer" className="text-sm flex items-center gap-1 hover:bg-[#4d4d4d] px-4 py-2 transition-colors rounded-md">
                             <Map className="w-4" /> Map
                         </Link>
                     </div>
@@ -51,7 +51,7 @@ export default function NavBar() {
                         <DiscordIcon className="w-3.5 fill-white" /> Discord
                     </Link>
                     <span className="text-[#333] mx-1">|</span>
-                    <Link href="https://map.mvndicraft.net/" target="_blank" rel="noreferrer" className="flex items-center gap-1 hover:text-[#FFD700] transition-colors px-2">
+                    <Link href="https://map.mvndicraft.net/" rel="noreferrer" className="flex items-center gap-1 hover:text-[#FFD700] transition-colors px-2">
                         <Map className="w-3.5" /> Map
                     </Link>
                     <span className="text-[#333] mx-1">|</span>
