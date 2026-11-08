@@ -1,6 +1,5 @@
 "use client";
 
-import News from "@/app/components/News/News";
 import Heading from "@/app/components/Heading";
 import Discover from "@/app/components/Discover";
 import BentoGallery from "@/app/components/BentoGallery";
@@ -15,7 +14,6 @@ export default function Home() {
       <Discover/>
       <Playlist/>
       <BentoGallery aria-label="Game Features Gallery"/>
-      <News aria-label="Latest News and Updates"/>
       <ForgeKingdom/>
       <CTA/>
     </main>
