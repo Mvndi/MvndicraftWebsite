@@ -108,7 +108,7 @@ export default function NavBar() {
                     <Link href="/" onClick={() => setMenuOpen(false)} className="px-6 py-4 hover:bg-[#1a1a1f] hover:text-[#FFD700] transition-colors border-b border-[#333]">
                         Home
                     </Link>
-                    <Link href="https://www.planetminecraft.com/server/mvndicraft-medieval-geopol/" target="_blank" rel="noreferrer" onClick={() => setMenuOpen(false)} className="px-6 py-4 hover:bg-[#1a1a1f] hover:text-[#FFD700] transition-colors border-b border-[#333]">
+                    <Link href="/vote" onClick={() => setMenuOpen(false)} className="px-6 py-4 hover:bg-[#1a1a1f] hover:text-[#FFD700] transition-colors border-b border-[#333]">
                         Vote
                     </Link>
                     <Link href="https://wiki.mvndicraft.net/rules.html" target="_blank" rel="noreferrer" onClick={() => setMenuOpen(false)} className="px-6 py-4 hover:bg-[#1a1a1f] hover:text-[#FFD700] transition-colors border-b border-[#333]">

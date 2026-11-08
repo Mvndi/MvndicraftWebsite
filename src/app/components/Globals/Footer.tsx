@@ -11,7 +11,7 @@ const socialLinks = [
 
 const footerLinks = {
     platform: [
-        { label: "Vote", href: "https://store.mvndicraft.net/" },
+        { label: "Vote", href: "/vote" },
         { label: "Rules", href: "https://wiki.mvndicraft.net/rules.html" },
         { label: "Wiki", href: "https://wiki.mvndicraft.net" },
         { label: "Store", href: "https://store.mvndicraft.net/" },
